@@ -1,0 +1,9 @@
+Task ID,Workstream,Task,Owner,Priority,Due Date,Status,Blocker,Next Action
+OPS-001,Client Onboarding,Verify intake documents,Admin VA,High,2026-09-12,In Progress,Missing signed form,Request signed form
+OPS-002,Reporting,Prepare weekly operations summary,Admin VA,Medium,2026-09-13,Review,,Send for review
+OPS-003,Billing Support,Match invoice to approval record,Accounting Support,High,2026-09-11,Held,Approval reference unclear,Escalate reference mismatch
+OPS-004,CRM,Review possible duplicate contacts,Admin VA,Medium,2026-09-14,Review,Conflicting addresses,Compare source records
+OPS-005,Documentation,Update onboarding SOP,Operations,Low,2026-09-16,Not Started,,Review current process
+OPS-006,Follow-up,Confirm pending client response,Admin VA,Medium,2026-09-12,In Progress,,Send concise follow-up
+OPS-007,File Control,Archive completed onboarding package,Admin VA,Low,2026-09-15,Not Started,,Verify folder completeness
+OPS-008,Data Quality,Validate imported contact batch,Operations,High,2026-09-11,Review,2 records need identity check,Hold ambiguous records

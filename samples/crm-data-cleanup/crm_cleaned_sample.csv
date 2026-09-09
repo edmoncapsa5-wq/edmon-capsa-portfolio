@@ -1,0 +1,9 @@
+Source ID,First Name,Last Name,Email,Phone,Company,City,Status,Validation,Duplicate Key
+SRC-001,Ana,Reyes,ana.reyes@example.com,09175550101,Northstar Co.,Makati,Active,VALID,ana.reyes@example.com|09175550101
+SRC-002,Ana,Reyes,ana.reyes@example.com,09175550101,Northstar Company,Makati City,Active,VALID,ana.reyes@example.com|09175550101
+SRC-003,Marco,Santos,marco.santos@example.com,09185550102,Lumen Studio,Quezon City,Active,VALID,marco.santos@example.com|09185550102
+SRC-004,Mika,Dela Cruz,,09195550103,Orchid Retail,Pasig,Lead,REVIEW,|09195550103
+SRC-005,Jon,Lim,jon.lim@example.com,09175550104,Peakline Inc.,Taguig,Active,VALID,jon.lim@example.com|09175550104
+SRC-006,John,Lim,jon.lim@example.com,09175550104,Peakline Inc.,Taguig,Active,VALID,jon.lim@example.com|09175550104
+SRC-007,Ivy,Tan,ivy.tan@example.com,09165550105,Cedar Works,Cebu,Inactive,VALID,ivy.tan@example.com|09165550105
+SRC-008,Paolo,Garcia,paolo.garcia@example.com,09175550106,Brightpath,Manila,Lead,VALID,paolo.garcia@example.com|09175550106
