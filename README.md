@@ -10,6 +10,21 @@ I am currently targeting remote **Operations, Administrative, Data, Research, an
 
 ---
 
+## Portfolio Samples — Start Here
+
+| Sample | What it demonstrates |
+|---|---|
+| [Operations Tracker](samples/operations-tracker/README.md) | Task ownership, priorities, status control, blockers, next actions |
+| [Shared Inbox Triage SOP](samples/sop-inbox-triage/README.md) | Inbox management, SOP writing, escalation judgment |
+| [Research & Decision Brief](samples/research-brief/README.md) | Research scoping, source discipline, decision-focused reporting |
+| [CRM & Data Cleanup Case Study](case-studies/crm-data-cleanup.md) | Data quality, duplicate control, exception handling |
+| [SOP & Process Control Case Study](case-studies/sop-process-control.md) | Process design, decision points, verification |
+| [Accounting Document Control Case Study](case-studies/accounting-document-control.md) | Document review, bookkeeping support, controlled exceptions |
+
+> All portfolio examples are sanitized or fictional demonstrations. Client-sensitive information, credentials, proprietary data, and identifying details are excluded.
+
+---
+
 ## What I Can Support
 
 - Administrative and operations support
@@ -32,15 +47,11 @@ I use a simple operating rule:
 
 That means I do not guess when a record, policy, transaction, or client instruction is materially unclear. Clean, deterministic work can move quickly; exceptions are isolated, documented, and surfaced for the right decision.
 
-My normal workflow is:
-
 **INTAKE → CLARIFY → ORGANIZE → EXECUTE → VALIDATE → EXCEPT → VERIFY → HANDOFF**
 
 ---
 
 # Selected Proof of Work
-
-The case studies below are **sanitized portfolio examples** based on real operational patterns and practice work. Client-sensitive information, credentials, proprietary data, and identifying details are excluded.
 
 ## 1. Accounting Document Processing & Bookkeeping Support
 
@@ -53,136 +64,40 @@ The case studies below are **sanitized portfolio examples** based on real operat
 - Prepared transaction details for bookkeeping-system entry
 - Separated routine cases from transactions requiring reviewer judgment
 
-**Controls used:**
-- No silent guessing on missing tax/accounting information
-- Exception flags for incomplete or conflicting records
-- Validation before import or posting
-- Clear distinction between preparation work and accountant-authorized decisions
-
-**Skills demonstrated:** Data accuracy, document control, bookkeeping support, exception handling, process discipline.
-
----
+**Controls used:** validation before import/posting, exception flags for incomplete or conflicting records, and a clear boundary between preparation work and accountant-authorized decisions.
 
 ## 2. CRM & Customer Data Cleanup
 
 **Business problem:** Customer records contain formatting inconsistencies, probable duplicates, missing fields, and conflicting identity information.
 
-**Example workflow:**
-1. Standardize deterministic formatting issues
-2. Validate required fields
-3. Separate clean records from exceptions
-4. Identify probable duplicates without automatically merging ambiguous identities
-5. Preserve source history
-6. Prepare a review queue for unresolved cases
-7. Import only validated records
-
-**Why this matters:** A technically successful import is not useful if it creates duplicate customers, overwrites correct information, or changes business meaning.
-
-**Skills demonstrated:** CRM operations, spreadsheet review, data quality, identity preservation, controlled imports.
-
----
+**Workflow:** standardize deterministic formatting → validate required fields → isolate exceptions → identify probable duplicates without unsafe merging → preserve source history → review unresolved cases → import validated records.
 
 ## 3. SOP & Process Documentation
 
-**Business problem:** A recurring task works only because one person remembers the steps.
-
-**Deliverable structure:**
-- Purpose
-- Trigger
-- Required inputs
-- Step-by-step workflow
-- Decision points
-- Exception handling
-- Stop conditions
-- Verification checklist
-- Ownership / escalation path
-- Final handoff state
-
-**Design goal:** Make the process simple enough for a new operator to follow without removing controls that protect against material mistakes.
-
-**Skills demonstrated:** Documentation, process mapping, operational judgment, knowledge transfer.
-
----
+I structure recurring procedures around purpose, trigger, required inputs, steps, decision points, exception handling, stop conditions, verification, ownership, and handoff state.
 
 ## 4. Research & Decision Support
 
-**Business problem:** A client needs a recommendation but the information is fragmented, current-state dependent, or contains conflicting claims.
-
-**My research approach:**
-- Define the actual decision first
-- Separate hard constraints from preferences
-- Prioritize primary and authoritative sources
-- Cross-check important claims
-- Track facts, assumptions, unknowns, and decisions separately
-- Look for disconfirming evidence
-- Compress the findings into a client-readable recommendation
-
-**Skills demonstrated:** Web research, source evaluation, structured analysis, concise reporting.
-
----
+I define the decision first, separate hard constraints from preferences, prioritize authoritative sources, cross-check material claims, distinguish facts from assumptions, seek disconfirming evidence, and compress findings into a client-readable recommendation.
 
 ## 5. Operations Tracking & Exception Management
 
-**Business problem:** A project has many moving parts, but status reports show activity instead of what actually needs attention.
-
-**Tracking model:**
-
-| Item | Current State | Risk / Exception | Owner | Next Action | Due / Gate |
-|---|---|---|---|---|---|
-| Example A | Ready | None | Operations | Proceed | Today |
-| Example B | Held | Missing authority | Client | Confirm decision | Before release |
-| Example C | Uncertain | Timeout / unknown completion | Operations | Reconcile state | Before retry |
-
-**Skills demonstrated:** Project coordination, status control, escalation, follow-through, operational communication.
-
----
+I track operational state rather than activity alone: current state, risk/exception, owner, next action, and due date/gate.
 
 ## 6. Workflow Automation Support
 
-I also work with AI-assisted and automated workflows where the business rules are sufficiently clear.
-
-Examples include:
-- Email classification and routing concepts
-- Reminder and follow-up workflows
-- Structured data extraction
-- Duplicate checks
-- Approval routing
-- Task creation
-- Exception queues
-- Recurring summaries
-
-My automation principle is:
+Where business rules are clear, I can support AI-assisted and automated workflows for classification, structured extraction, reminders, task creation, duplicate checks, approval routing, and exception queues.
 
 > **BUSINESS RULE → EVENT → VALIDATED DATA → SAFE ACTION → VERIFIED BUSINESS STATE**
-
-I do not treat a successful button click, API response, or workflow run as proof that the intended business outcome happened correctly.
 
 ---
 
 # Tools & Working Environment
 
-### Productivity & Operations
-- Microsoft Excel
-- Google Sheets
-- Google Docs / Drive
-- Microsoft Office
-- Canva
-
-### Accounting Support
-- QuickBooks Online
-- Accounting document preparation and transaction review workflows
-
-### Automation / AI-Assisted Work
-- ChatGPT
-- n8n
-- Zapier concepts
-- API / webhook concepts
-- AI-assisted research, classification, extraction, and documentation
-
-### Other
-- GitHub
-- Browser-based SaaS tools
-- CRM/data-management workflows
+**Productivity & Operations:** Microsoft Excel, Google Sheets, Google Docs/Drive, Microsoft Office, Canva  
+**Accounting Support:** QuickBooks Online; accounting document preparation and transaction review workflows  
+**Automation / AI-Assisted Work:** ChatGPT, n8n, Zapier concepts, API/webhook concepts  
+**Other:** GitHub, browser-based SaaS tools, CRM/data-management workflows
 
 > Tool lists describe working exposure and capability areas, not claimed vendor certification or expert-level mastery.
 
@@ -191,11 +106,9 @@ I do not treat a successful button click, API response, or workflow run as proof
 # Experience
 
 ## Assistant Bookkeeper — SGL Business Outsourcing Services OPC
-
 Supported bookkeeping operations including expense and sales transaction preparation, invoice and receipt review, account categorization support, bill-payment preparation, and journal/ledger-related work.
 
 ## Teaching Intern — Punta Integrated School
-
 Prepared lesson plans and presentations, managed multiple class sections, evaluated student work, maintained records, and handled time-sensitive classroom and administrative responsibilities.
 
 ---
@@ -208,15 +121,15 @@ City College of Calamba
 
 ---
 
-# What You Can Expect From Me
+# Working Principles
 
-- I organize before I execute.
-- I verify before I finalize consequential work.
-- I do not hide material exceptions.
-- I do not invent missing business rules.
-- I document work so another person can continue it.
-- I use AI to accelerate work, not to remove accountability.
-- I escalate decisions that require client, accounting, legal, security, or other specialist authority.
+- Organize before executing.
+- Verify before finalizing consequential work.
+- Surface material exceptions instead of hiding them.
+- Do not invent missing business rules.
+- Document work so another person can continue it.
+- Use AI to accelerate work, not to remove accountability.
+- Escalate decisions requiring client, accounting, legal, security, or other specialist authority.
 
 ---
 
@@ -225,12 +138,5 @@ City College of Calamba
 **Edmon A. Capsa**  
 Laguna, Philippines  
 Email: **edmon.capsa5@gmail.com**  
-LinkedIn: **Edmon Capsa**
-
+LinkedIn: **Edmon Capsa**  
 GitHub: **@edmoncapsa5-wq**
-
----
-
-## Portfolio Status
-
-This repository is the central hub for my Operations & Administrative VA portfolio. Additional sanitized work samples, templates, screenshots, and case-study artifacts will be added as separate folders so recruiters can inspect specific capabilities without exposing client data.
