@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lead Recovery Workflow — Validation Demo</title>
+<style>
+:root{--bg:#09111f;--panel:#121c2e;--line:#2b3d5a;--text:#eef4ff;--muted:#aab8cf;--accent:#7dd3fc;--accent2:#c4b5fd;--good:#86efac;--warn:#fde68a;--bad:#fca5a5}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(circle at top,#14213c 0,#09111f 42%,#060b13 100%);color:var(--text);min-height:100vh}.shell{max-width:900px;margin:auto;padding:16px}.card{background:linear-gradient(180deg,#172238,#111a2b);border:1px solid var(--line);border-radius:22px;padding:22px;margin-bottom:16px;box-shadow:0 16px 44px rgba(0,0,0,.23)}h1,h2{margin:0 0 10px;line-height:1.15}h1{font-size:clamp(30px,5vw,48px)}h2{font-size:clamp(22px,3.5vw,30px)}p{line-height:1.55}.muted{color:var(--muted)}.kicker{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#b8e4ff;margin-bottom:10px}.badge{display:inline-block;border:1px solid #3a567c;border-radius:999px;padding:6px 9px;font-size:12px;color:#dbeafe}.grid{display:grid;gap:12px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}label{display:block;font-size:13px;font-weight:750;margin-bottom:6px}input,select,textarea{width:100%;background:#0b1525;color:var(--text);border:1px solid #33496d;border-radius:11px;padding:11px;font:inherit}textarea{min-height:95px}.btn{border:0;border-radius:12px;padding:12px 15px;font-weight:800;font-size:14px;cursor:pointer;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#07101d}.btn.secondary{background:#1a2943;color:#eef4ff;border:1px solid #365070}.timeline{display:grid;gap:10px;margin-top:16px}.step{display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:start;padding:12px;border:1px solid var(--line);border-radius:14px;background:#0c1626}.dot{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;border:1px solid #3a5275;color:#9fb1ca;font-weight:800}.step.done .dot{background:#173324;color:#bdf8cf;border-color:#315d45}.step.active{border-color:#4d719e}.step.active .dot{background:#173050;color:#bfe7ff}.step small{color:var(--muted)}.notice{padding:14px;border:1px solid #385679;border-radius:14px;background:rgba(14,43,72,.46);line-height:1.5}.output{white-space:pre-wrap;background:#0b1524;border:1px solid var(--line);border-radius:14px;padding:14px;line-height:1.5}.hidden{display:none!important}.choice-grid{display:grid;gap:9px}.choice{padding:12px;border:1px solid #33496d;border-radius:12px;background:#0d1726;color:var(--text);text-align:left;cursor:pointer}.choice.selected{border-color:var(--accent);background:#10263b}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.tiny{font-size:12px;color:#8ea0ba}.good{color:var(--good)}.footer{font-size:12px;color:#8392aa;line-height:1.5;margin:10px 2px 30px}@media(max-width:640px){.grid.two{grid-template-columns:1fr}.shell{padding:10px}.card{padding:16px}.btn{width:100%}.actions{display:grid;grid-template-columns:1fr}}
+</style></head><body><div class="shell">
+<div style="display:flex;justify-content:space-between;gap:10px;align-items:center;margin:4px 0 14px;flex-wrap:wrap"><strong>Lead Recovery Workflow</strong><span class="badge">Recruitment-agency validation demo</span></div>
+
+<section class="card"><div class="kicker">Outcome test</div><h1>No new inquiry should disappear between inbox, spreadsheet, and CRM.</h1>
+<p class="muted">This simulation shows the outcome of a lightweight automation: capture the lead, check duplicates, assign an owner, acknowledge immediately, and schedule follow-up. It does not connect to your real systems during this test.</p>
+<div class="notice"><strong>What we're testing:</strong> Would a small recruitment agency pay $99 for setup if this eliminated manual copying and inconsistent first follow-up?</div>
+<div class="grid two" style="margin-top:16px">
+<div><label>Lead / company</label><input id="leadName" value="Northfield Manufacturing"></div>
+<div><label>Contact email</label><input id="leadEmail" value="hiring@northfield.example"></div>
+<div><label>Inquiry type</label><select id="leadType"><option>Employer hiring inquiry</option><option>Candidate inquiry</option><option>Referral</option></select></div>
+<div><label>Current system</label><select id="system"><option>Bullhorn</option><option>HubSpot</option><option>GoHighLevel</option><option>Google Sheets</option><option>Other / mixed</option></select></div>
+</div><div class="actions"><button class="btn" id="runBtn">Run workflow simulation</button></div></section>
+
+<section class="card"><div class="kicker">Workflow</div><h2>What happens after the inquiry arrives</h2>
+<div class="timeline">
+<div class="step" id="s1"><div class="dot">1</div><div><strong>Capture</strong><br><small>Normalize name, email, inquiry source and timestamp.</small></div></div>
+<div class="step" id="s2"><div class="dot">2</div><div><strong>Duplicate check</strong><br><small>Look for an existing organization/contact before creating another record.</small></div></div>
+<div class="step" id="s3"><div class="dot">3</div><div><strong>Create or update record</strong><br><small>Put the inquiry in the system of record.</small></div></div>
+<div class="step" id="s4"><div class="dot">4</div><div><strong>Assign owner</strong><br><small>Apply a clear ownership rule so the inquiry is not “everyone's job.”</small></div></div>
+<div class="step" id="s5"><div class="dot">5</div><div><strong>Immediate acknowledgement</strong><br><small>Send a professional response confirming receipt.</small></div></div>
+<div class="step" id="s6"><div class="dot">6</div><div><strong>Follow-up scheduled</strong><br><small>If there is no reply, create the next follow-up automatically.</small></div></div>
+<div class="step" id="s7"><div class="dot">7</div><div><strong>Stop on response</strong><br><small>Once the person replies, cancel automated follow-up and flag the owner.</small></div></div>
+</div></section>
+
+<section class="card hidden" id="resultCard"><div class="kicker">Simulation result</div><h2 class="good">Inquiry captured and assigned.</h2>
+<div class="output" id="resultText"></div></section>
+
+<section class="card"><div class="kicker">Validation question</div><h2>Would you pay $99 for this setup in your existing workflow?</h2>
+<p class="muted">Assume it is configured around your existing tools, includes duplicate handling, owner assignment, acknowledgement, follow-up logic, and a tested handoff.</p>
+<div class="choice-grid"><button class="choice" data-price="yes"><strong>Yes</strong><br><span class="tiny">I would seriously consider a $99 pilot.</span></button><button class="choice" data-price="maybe"><strong>Maybe</strong><br><span class="tiny">The outcome matters, but I would need something else first.</span></button><button class="choice" data-price="no"><strong>No</strong><br><span class="tiny">This would not be worth $99 for us.</span></button></div>
+<label style="margin-top:14px">What do you currently use for lead/candidate/client intake?</label><input id="currentProcess" placeholder="e.g. Bullhorn + email + spreadsheet">
+<label style="margin-top:14px">What would block you from using this?</label><textarea id="comment" placeholder="Access/security, integrations, trust, workflow differences, price, etc."></textarea>
+<div class="actions"><button class="btn" id="saveBtn" disabled>Save anonymous feedback</button></div></section>
+
+<section class="card hidden" id="done"><div class="kicker">Test complete</div><h2>Thank you.</h2><div class="notice" id="summary"></div><div class="actions"><button class="btn" id="copyBtn">Copy summary</button><button class="btn secondary" id="jsonBtn">Export JSON</button></div><div class="tiny" id="status"></div></section>
+<div class="footer">Validation build v1 • Simulation only • No CRM credentials or business data are transmitted • This is testing willingness to adopt the workflow outcome, not technical integration feasibility.</div>
+</div><script>
+const $=id=>document.getElementById(id);
+const testerId=localStorage.getItem('leadRecoveryTesterId')||('L'+Math.random().toString(36).slice(2,8).toUpperCase());localStorage.setItem('leadRecoveryTesterId',testerId);
+const visits=Number(localStorage.getItem('leadRecoveryVisitCount')||0)+1;localStorage.setItem('leadRecoveryVisitCount',String(visits));
+const source=(new URLSearchParams(location.search).get('src')||'direct').slice(0,40);
+let ran=false,price=null;
+$('runBtn').onclick=()=>{ran=true;[1,2,3,4,5,6,7].forEach((n,i)=>setTimeout(()=>{document.querySelectorAll('.step').forEach(s=>s.classList.remove('active'));let el=$('s'+n);el.classList.add('done','active');if(n===7){$('resultText').textContent=`Lead: ${$('leadName').value}\nSystem: ${$('system').value}\nDuplicate check: passed\nRecord: created/updated\nOwner: Recruitment Desk A\nAcknowledgement: queued immediately\nFollow-up: scheduled if no response\nStop condition: inbound reply`; $('resultCard').classList.remove('hidden');$('resultCard').scrollIntoView({behavior:'smooth'})}},i*180))};
+document.querySelectorAll('[data-price]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-price]').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');price=b.dataset.price;$('saveBtn').disabled=false});
+$('saveBtn').onclick=()=>{let d={prototype:'Lead Recovery Workflow validation v1',tester_id:testerId,visit_count:visits,acquisition_source:source,timestamp:new Date().toISOString(),ran_simulation:ran,selected_system:$('system').value,inquiry_type:$('leadType').value,price_99_usd:price,current_process:$('currentProcess').value.trim()||null,comment:$('comment').value.trim()||null};window.validationData=d;localStorage.setItem('leadRecoveryValidationLast',JSON.stringify(d));$('summary').textContent=`Tester ${d.tester_id} | Source ${d.acquisition_source} | Simulation ${d.ran_simulation?'used':'not used'} | System ${d.selected_system} | $99 ${d.price_99_usd} | Current process ${d.current_process||'-'} | Blocker ${d.comment||'-'}`;$('done').classList.remove('hidden');$('done').scrollIntoView({behavior:'smooth'})};
+$('copyBtn').onclick=async()=>{let d=window.validationData||JSON.parse(localStorage.getItem('leadRecoveryValidationLast')||'{}');let t=`Lead recovery validation | Tester ${d.tester_id} | Source ${d.acquisition_source||'direct'} | Simulation ${d.ran_simulation?'used':'not used'} | System ${d.selected_system} | $99 ${d.price_99_usd} | Current process ${d.current_process||'-'} | Blocker ${d.comment||'-'}`;try{await navigator.clipboard.writeText(t);$('status').textContent='Summary copied.'}catch(e){$('status').textContent=t}};
+$('jsonBtn').onclick=()=>{let d=window.validationData||JSON.parse(localStorage.getItem('leadRecoveryValidationLast')||'{}');let b=new Blob([JSON.stringify(d,null,2)],{type:'application/json'}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download='lead-recovery-validation.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),400)};
+</script></body></html>
