@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6f3ee">
+<title>Quote Rescue — Validation Build</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="shell">
+  <div class="topbar"><div class="brand">Quote Rescue <span>/ validation build</span></div><div class="pill">No account · local only</div></div>
+  <section class="hero">
+    <div class="kicker">For balloon decorators who already know their costs</div>
+    <h1>Client budget too low? Find the safest version you can still sell.</h1>
+    <p>Use the quote you already built. Quote Rescue keeps the client’s most important pieces where possible, protects your floor, and gives you a client-ready response.</p>
+    <div class="hero-actions"><button id="loadSample" class="btn secondary" type="button">Try a real example</button><span>≈ 2 minutes with a prepared quote</span></div>
+  </section>
+
+  <section class="card">
+    <div class="section-head"><div><span class="step">1</span><h2>Client budget</h2></div><span class="hint">The number forcing the compromise.</span></div>
+    <div class="row"><div class="field narrow"><label>Currency</label><input id="currency" value="$" maxlength="4"></div><div class="field grow"><label>Client budget</label><input id="budget" type="number" min="0" step="0.01" placeholder="500"></div></div>
+  </section>
+
+  <section class="card">
+    <div class="section-head"><div><span class="step">2</span><h2>What can change?</h2></div><span class="hint">Only add options you would genuinely sell.</span></div>
+    <div id="components"></div>
+    <button id="addComponent" class="btn secondary fullbtn" type="button">+ Add quote item</button>
+  </section>
+
+  <section class="card">
+    <details id="guardrailDetails">
+      <summary class="summary-row"><span><span class="step">3</span><strong>Your business guardrails</strong></span><span class="summary-note">Set once · saved on this device</span></summary>
+      <div class="details-body">
+        <p class="sub">These stop the tool from “solving” the budget by quietly making the job bad for you.</p>
+        <div class="row"><div class="field"><label>Lowest margin you will accept <span class="help">%</span></label><input id="minMargin" type="number" min="0" max="90" step="0.1" value="20"></div><div class="field"><label>Margin you normally aim for <span class="help">%</span></label><input id="targetMargin" type="number" min="0" max="90" step="0.1" value="35"></div></div>
+        <div class="row"><div class="field"><label>Minimum profit for this job</label><input id="minProfit" type="number" min="0" step="0.01" value="0"></div><div class="field"><label>Minimum booking amount</label><input id="minimumBooking" type="number" min="0" step="0.01" value="0"></div></div>
+        <details class="nested"><summary>Payment fee and margin note</summary><div class="nested-body"><div class="field"><label>Payment fee %</label><input id="paymentFee" type="number" min="0" max="50" step="0.1" value="0"></div><p class="notice">A 20% margin means profit is 20% of the selling price. It is not the same as adding 20% to cost.</p></div></details>
+        <div class="actions"><button id="saveSettings" class="btn ghost" type="button">Save guardrails</button><span id="saved" class="notice"></span></div>
+      </div>
+    </details>
+  </section>
+
+  <section class="card">
+    <div class="section-head"><div><span class="step">4</span><h2>Before I calculate</h2></div><span class="hint">One safety check.</span></div>
+    <label class="bigcheck"><input id="costConfirmed" type="checkbox"><span><strong>I included the relevant costs for this job.</strong><small>Materials/rentals, my labor, helpers, travel, setup/teardown, consumables, overhead and payment fees where applicable.</small></span></label>
+    <details class="nested"><summary>What should count as “cost”?</summary><div class="nested-body checkgrid"><span>Materials / rentals</span><span>Your labor time</span><span>Assistant labor</span><span>Travel / delivery</span><span>Setup / teardown</span><span>Consumables / waste</span><span>Overhead allocation</span><span>Payment fees</span></div></details>
+    <label class="bigcheck slim"><input id="unresolved" type="checkbox"><span><strong>Something important is still unknown.</strong><small>Venue access, parking, install window, teardown requirements, etc.</small></span></label>
+    <div id="unresolvedWrap" class="field hidden"><label>What is unresolved?</label><textarea id="unresolvedText" rows="2" placeholder="e.g. venue access and teardown window"></textarea></div>
+  </section>
+
+  <section class="card action-card"><button id="solve" class="btn primary fullbtn" type="button">Find the safest offer</button><div id="error" class="error"></div></section>
+
+  <section id="result" class="card result">
+    <div id="resultHead" class="result-head"><div class="eyebrow">Recommended move</div><div id="decision" class="decision"></div><p id="reason" class="reason"></p></div>
+    <div id="financialResult"><div class="metric-grid"><div class="metric"><b id="mBudget">—</b><span>Client budget</span></div><div class="metric"><b id="mOriginal">—</b><span>Original quote</span></div><div class="metric"><b id="mOffer">—</b><span>Suggested offer</span></div><div class="metric"><b id="mFloor">—</b><span>Lowest safe price</span></div></div></div>
+    <div id="scopeResult"><h2>What changes</h2><div id="scopeList" class="scope-list"></div></div>
+    <h2>Message you can send</h2><div id="clientMessage" class="message"></div><div class="actions"><button id="copyMessage" class="btn secondary" type="button">Copy message</button></div>
+    <p class="notice">Validation build. It trusts the costs and business rules you enter; it does not verify taxes, contracts, local requirements, or whether your cost estimates are complete.</p>
+  </section>
+
+  <div class="footer">Quote Rescue V0.2 · hostile-usability build · data stays in this browser</div>
+</main>
+
+<script src="engine.js"></script><script src="app.js"></script>
+</body></html>
