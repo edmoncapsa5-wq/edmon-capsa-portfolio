@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contractor Profit Check — Validation Prototype</title>
+<style>
+:root{--bg:#0b1220;--panel:#121c2e;--panel2:#0e1727;--line:#293a57;--text:#eef4ff;--muted:#aab8cf;--accent:#7dd3fc;--accent2:#c4b5fd;--good:#86efac;--warn:#fde68a;--bad:#fca5a5}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(circle at top,#14213c 0,#0b1220 40%,#070c15 100%);color:var(--text);min-height:100vh}.shell{max-width:900px;margin:auto;padding:18px}.card{background:linear-gradient(180deg,rgba(23,34,56,.97),rgba(17,26,43,.97));border:1px solid var(--line);border-radius:22px;padding:22px;margin-bottom:16px;box-shadow:0 16px 46px rgba(0,0,0,.24)}h1,h2,h3{margin:0 0 10px;line-height:1.15}h1{font-size:clamp(30px,5vw,48px)}h2{font-size:clamp(22px,3.6vw,30px)}p{line-height:1.55}.muted{color:var(--muted)}.kicker{font-size:12px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#b6e3ff;margin-bottom:10px}.grid{display:grid;gap:12px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.field{background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:12px}label{display:block;font-size:13px;font-weight:750;margin-bottom:7px;color:#dbe7f8}input,select,textarea{width:100%;background:#0a1322;color:var(--text);border:1px solid #33496d;border-radius:11px;padding:12px;font:inherit}textarea{min-height:90px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.btn{border:0;border-radius:13px;padding:13px 17px;font-weight:800;font-size:15px;cursor:pointer;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#07101d}.btn.secondary{background:#1a2943;color:#eef4ff;border:1px solid #365070}.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:10px;margin-top:16px}.metric{padding:15px;border:1px solid var(--line);border-radius:15px;background:#0c1626}.metric span{display:block;font-size:12px;color:var(--muted);margin-bottom:6px}.metric strong{font-size:24px}.good{color:var(--good)}.warn{color:var(--warn)}.bad{color:var(--bad)}.notice{padding:14px 15px;border:1px solid #385679;border-radius:14px;background:rgba(14,43,72,.45);line-height:1.5}.hidden{display:none!important}.price-options{display:grid;gap:9px}.choice{padding:12px;border:1px solid #33496d;border-radius:12px;background:#0d1726;color:var(--text);text-align:left;cursor:pointer}.choice.selected{border-color:var(--accent);background:#10263b}.tiny{font-size:12px;color:#8fa0ba}.footer{font-size:12px;color:#8392aa;line-height:1.5;margin:10px 2px 30px}.divider{height:1px;background:var(--line);margin:20px 0}.badge{display:inline-block;border:1px solid #3b577e;border-radius:999px;padding:6px 9px;font-size:12px;color:#dbeafe}@media(max-width:640px){.grid.two{grid-template-columns:1fr}.btn{width:100%}.card{padding:17px}.shell{padding:11px}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <div style="display:flex;justify-content:space-between;gap:10px;align-items:center;margin:4px 0 14px;flex-wrap:wrap">
+    <strong>Contractor Profit Check</strong><span class="badge">Validation prototype</span>
+  </div>
+
+  <section class="card">
+    <div class="kicker">Before you quote</div>
+    <h1>Know if the job is worth taking before you price it.</h1>
+    <p class="muted">Enter the expected costs and your target margin. This tool calculates the minimum quote needed to protect that margin. It deliberately does not include CRM, invoicing, payroll, or accounting.</p>
+    <div class="notice"><strong>Key distinction:</strong> margin and markup are not the same. If a job costs $1,000 and you want a 25% gross margin, the quote is $1,333.33—not $1,250.</div>
+
+    <div class="grid two" style="margin-top:16px">
+      <div class="field"><label>Expected labor hours</label><input id="hours" type="number" min="0" step="0.25" value="24"></div>
+      <div class="field"><label>True labor cost per hour</label><input id="laborRate" type="number" min="0" step="0.01" value="25"></div>
+      <div class="field"><label>Materials</label><input id="materials" type="number" min="0" step="0.01" value="900"></div>
+      <div class="field"><label>Subcontractors</label><input id="subs" type="number" min="0" step="0.01" value="0"></div>
+      <div class="field"><label>Equipment / travel / permits</label><input id="other" type="number" min="0" step="0.01" value="150"></div>
+      <div class="field"><label>Overhead allowance (% of direct cost)</label><input id="overheadPct" type="number" min="0" max="100" step="0.1" value="12"></div>
+      <div class="field"><label>Target gross margin (%)</label><input id="marginPct" type="number" min="1" max="90" step="0.1" value="30"></div>
+      <div class="field"><label>Currency</label><select id="currency"><option value="$">$ USD</option><option value="₱">₱ PHP</option><option value="€">€ EUR</option><option value="£">£ GBP</option></select></div>
+    </div>
+    <div class="actions"><button class="btn" id="calcBtn">Check this quote</button></div>
+
+    <div id="results" class="hidden">
+      <div class="metrics">
+        <div class="metric"><span>Direct job cost</span><strong id="directCost"></strong></div>
+        <div class="metric"><span>Overhead allowance</span><strong id="overheadCost"></strong></div>
+        <div class="metric"><span>True estimated cost</span><strong id="trueCost"></strong></div>
+        <div class="metric"><span>Minimum quote for target margin</span><strong class="good" id="recommendedQuote"></strong></div>
+        <div class="metric"><span>Expected gross profit</span><strong id="expectedProfit"></strong></div>
+        <div class="metric"><span>Equivalent markup on cost</span><strong id="markupPct"></strong></div>
+      </div>
+      <p class="muted" id="explanation"></p>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="kicker">After the job</div>
+    <h2>Did the margin survive reality?</h2>
+    <p class="muted">Optional. Enter actual costs after completion and compare them with the estimate.</p>
+    <div class="grid two">
+      <div class="field"><label>Actual labor hours</label><input id="actualHours" type="number" min="0" step="0.25" placeholder="e.g. 29"></div>
+      <div class="field"><label>Actual labor cost per hour</label><input id="actualLaborRate" type="number" min="0" step="0.01" placeholder="e.g. 25"></div>
+      <div class="field"><label>Actual materials</label><input id="actualMaterials" type="number" min="0" step="0.01" placeholder="e.g. 1040"></div>
+      <div class="field"><label>Actual subcontractors</label><input id="actualSubs" type="number" min="0" step="0.01" placeholder="e.g. 0"></div>
+      <div class="field"><label>Actual equipment / travel / permits</label><input id="actualOther" type="number" min="0" step="0.01" placeholder="e.g. 185"></div>
+      <div class="field"><label>Final amount charged</label><input id="actualRevenue" type="number" min="0" step="0.01" placeholder="Use your real final invoice"></div>
+    </div>
+    <div class="actions"><button class="btn secondary" id="actualBtn">Compare estimate vs actual</button></div>
+    <div id="actualResults" class="hidden">
+      <div class="metrics">
+        <div class="metric"><span>Actual total cost</span><strong id="actualCostOut"></strong></div>
+        <div class="metric"><span>Actual gross profit</span><strong id="actualProfitOut"></strong></div>
+        <div class="metric"><span>Actual gross margin</span><strong id="actualMarginOut"></strong></div>
+        <div class="metric"><span>Margin change vs target</span><strong id="marginDeltaOut"></strong></div>
+      </div>
+      <p id="actualInsight" class="muted"></p>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="kicker">Validation question</div>
+    <h2>Would you pay $19 one-time for a polished version built for your trade?</h2>
+    <p class="muted">Assume it saves jobs, remembers your standard costs, shows estimate vs actual, and stays much simpler than full contractor software.</p>
+    <div class="price-options" id="priceOptions">
+      <button class="choice" data-price="yes"><strong>Yes</strong><br><span class="tiny">I would seriously consider buying it at $19.</span></button>
+      <button class="choice" data-price="maybe"><strong>Maybe</strong><br><span class="tiny">Useful, but something would stop me.</span></button>
+      <button class="choice" data-price="no"><strong>No</strong><br><span class="tiny">This is not valuable enough for me.</span></button>
+    </div>
+    <label style="margin-top:14px">What trade/business are you in?</label>
+    <input id="trade" placeholder="e.g. electrical, painting, handyman, roofing">
+    <label style="margin-top:14px">What is the biggest thing missing from this tool?</label>
+    <textarea id="comment" placeholder="Optional, but specific criticism is more useful than compliments."></textarea>
+    <div class="actions"><button class="btn" id="saveBtn" disabled>Save anonymous feedback</button></div>
+  </section>
+
+  <section class="card hidden" id="done">
+    <div class="kicker">Test complete</div>
+    <h2>Thank you.</h2>
+    <p class="muted">Copy the anonymous summary and send it back to the person who invited you. No name or email is included.</p>
+    <div class="notice" id="summaryBox"></div>
+    <div class="actions"><button class="btn" id="copyBtn">Copy summary</button><button class="btn secondary" id="downloadBtn">Export JSON</button></div>
+    <div class="tiny" id="copyStatus"></div>
+  </section>
+
+  <div class="footer">Validation build v1 • Local-only data unless the tester manually copies/exports it • This is a pricing/profit planning aid, not accounting, tax, or legal advice.</div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const testerId=localStorage.getItem('contractorTesterId')||('C'+Math.random().toString(36).slice(2,8).toUpperCase());
+localStorage.setItem('contractorTesterId',testerId);
+const visits=Number(localStorage.getItem('contractorVisitCount')||0)+1;
+localStorage.setItem('contractorVisitCount',String(visits));
+const source=(new URLSearchParams(location.search).get('src')||'direct').slice(0,40);
+let calcData=null, actualData=null, price=null;
+
+function n(id){return Math.max(0,Number($(id).value)||0)}
+function money(x){const c=$('currency').value;return c+Number(x).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}
+
+$('calcBtn').onclick=()=>{
+  const hours=n('hours'), rate=n('laborRate'), materials=n('materials'), subs=n('subs'), other=n('other');
+  const overheadPct=Math.max(0,Math.min(100,n('overheadPct')));
+  const marginPct=Math.max(1,Math.min(90,n('marginPct')));
+  const labor=hours*rate, direct=labor+materials+subs+other, overhead=direct*(overheadPct/100), trueCost=direct+overhead;
+  const margin=marginPct/100, quote=trueCost/(1-margin), profit=quote-trueCost, markup=trueCost?profit/trueCost*100:0;
+  calcData={hours,rate,materials,subs,other,overheadPct,marginPct,labor,direct,overhead,trueCost,quote,profit,markup};
+  $('directCost').textContent=money(direct); $('overheadCost').textContent=money(overhead); $('trueCost').textContent=money(trueCost);
+  $('recommendedQuote').textContent=money(quote); $('expectedProfit').textContent=money(profit); $('markupPct').textContent=markup.toFixed(1)+'%';
+  $('explanation').textContent=`To keep ${marginPct.toFixed(1)}% gross margin on estimated cost, the quote must be about ${money(quote)}. That is a ${markup.toFixed(1)}% markup on cost.`;
+  $('results').classList.remove('hidden');
+};
+
+$('actualBtn').onclick=()=>{
+  const ah=n('actualHours'), ar=n('actualLaborRate'), am=n('actualMaterials'), as=n('actualSubs'), ao=n('actualOther'), revenue=n('actualRevenue');
+  if(!revenue){alert('Enter the final amount charged first.');return;}
+  const actualDirect=ah*ar+am+as+ao;
+  const overheadPct=calcData?calcData.overheadPct:n('overheadPct');
+  const actualOverhead=actualDirect*(overheadPct/100), actualCost=actualDirect+actualOverhead, profit=revenue-actualCost, margin=revenue?profit/revenue*100:0;
+  const target=calcData?calcData.marginPct:n('marginPct'), delta=margin-target;
+  actualData={ah,ar,am,as,ao,revenue,actualDirect,actualOverhead,actualCost,profit,margin,target,delta};
+  $('actualCostOut').textContent=money(actualCost); $('actualProfitOut').textContent=money(profit); $('actualMarginOut').textContent=margin.toFixed(1)+'%';
+  $('marginDeltaOut').textContent=(delta>=0?'+':'')+delta.toFixed(1)+' pts';
+  $('marginDeltaOut').className=delta>=0?'good':'bad';
+  $('actualInsight').textContent=delta>=0?`The job met or beat the target margin by ${delta.toFixed(1)} percentage points.`:`The job missed the target margin by ${Math.abs(delta).toFixed(1)} points. Compare actual labor/materials with the estimate to see what eroded profit.`;
+  $('actualResults').classList.remove('hidden');
+};
+
+document.querySelectorAll('[data-price]').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('[data-price]').forEach(x=>x.classList.remove('selected'));
+  b.classList.add('selected'); price=b.dataset.price; $('saveBtn').disabled=false;
+});
+
+$('saveBtn').onclick=()=>{
+  const data={
+    prototype:'Contractor Profit Check validation v1',
+    tester_id:testerId,visit_count:visits,acquisition_source:source,timestamp:new Date().toISOString(),
+    trade:$('trade').value.trim()||null,price_19_usd:price,comment:$('comment').value.trim()||null,
+    used_quote_calculator:!!calcData,used_actual_comparison:!!actualData,
+    quote_result:calcData?{estimated_cost:calcData.trueCost,recommended_quote:calcData.quote,target_margin_pct:calcData.marginPct}:null,
+    actual_result:actualData?{actual_cost:actualData.actualCost,actual_margin_pct:actualData.margin,margin_delta_points:actualData.delta}:null
+  };
+  localStorage.setItem('contractorValidationLast',JSON.stringify(data)); window.validationData=data;
+  $('summaryBox').textContent=`Tester ${data.tester_id} | Source ${data.acquisition_source} | Trade ${data.trade||'-'} | Used quote tool ${data.used_quote_calculator?'yes':'no'} | Used actual compare ${data.used_actual_comparison?'yes':'no'} | $19 ${data.price_19_usd} | Comment ${data.comment||'-'}`;
+  $('done').classList.remove('hidden'); $('done').scrollIntoView({behavior:'smooth'});
+};
+
+$('copyBtn').onclick=async()=>{
+  const d=window.validationData||JSON.parse(localStorage.getItem('contractorValidationLast')||'{}');
+  const text=`Contractor validation | Tester ${d.tester_id} | Source ${d.acquisition_source||'direct'} | Trade ${d.trade||'-'} | Used quote tool ${d.used_quote_calculator?'yes':'no'} | Used actual compare ${d.used_actual_comparison?'yes':'no'} | $19 ${d.price_19_usd} | Comment ${d.comment||'-'}`;
+  try{await navigator.clipboard.writeText(text);$('copyStatus').textContent='Summary copied.'}catch(e){$('copyStatus').textContent=text}
+};
+$('downloadBtn').onclick=()=>{
+  const d=window.validationData||JSON.parse(localStorage.getItem('contractorValidationLast')||'{}');
+  const blob=new Blob([JSON.stringify(d,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');
+  a.href=url;a.download='contractor-validation.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),400);
+};
+</script>
+</body>
+</html>
