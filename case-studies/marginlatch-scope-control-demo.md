@@ -45,6 +45,18 @@ A production studio agrees to deliver one 60-second campaign film with two conso
 
 **Boundary:** A timestamped-feedback platform (such as Frame.io) is useful for editorial notes. MarginLatch does not connect to it or provide integrated billing or legally verified e-signatures. It records the separate internal quote/decision trail using editable files.
 
+## Two-minute fit check
+
+The goal is not to add another tracker where one already works. Before quoting a setup, answer these three questions:
+
+1. When a client requests another page, revision round, or cutdown, **where is the original scope checked**?
+2. Who records the **extra price, timing impact, and client's actual approval** before that work begins?
+3. At the end of each project, who verifies that **approved additions were invoiced**, rather than simply completed?
+
+If each answer has an owner and an accessible existing record, you probably do not need MarginLatch. If there is a gap, a narrow, customized approval trail may help.
+
+**Request a fit check:** [Email your three answers](mailto:edmon.capsa5@gmail.com?subject=MarginLatch%20two-minute%20fit%20check&body=1.%20Where%20we%20check%20scope%3A%20%0A2.%20How%20we%20record%20price%20and%20approval%3A%20%0A3.%20How%20we%20confirm%20extras%20were%20invoiced%3A%20). Send no client-sensitive records or personal information. A fit-check response is not a purchase.
+
 ## $99 founding offer: customized scope-control setup
 
 - A tracker configured around the studio’s actual package tiers, revision allowances, and added-work categories.
