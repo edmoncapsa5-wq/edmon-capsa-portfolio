@@ -40,6 +40,8 @@ If your current project-management or invoicing software covers all three reliab
 
 ### Interested in a sample or fixed-scope proposal?
 
+**[See the precise $99 deliverables, intake questions and order process](ORDER.md)** before making a payment decision. A fit-check email is free; no checkout or bank account is published.
+
 **[Email for a sample or fit check](mailto:edmon.capsa5@gmail.com?subject=MarginLatch%20agency%20scope-control%20fit%20check&body=Agency%20name%3A%20%0APublic%20services%20or%20pricing%20link%3A%20%0A1.%20Where%20we%20check%20scope%3A%20%0A2.%20How%20we%20record%20client%20approvals%3A%20%0A3.%20How%20we%20make%20sure%20approved%20extras%20are%20billed%3A%20)**
 
 You can send the link to your **public** service packages and a short explanation of your workflow. Please do not send private client data or account credentials. I will confirm whether the product is suitable before offering a paid setup.
