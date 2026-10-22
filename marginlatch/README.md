@@ -12,15 +12,15 @@ MarginLatch is a lightweight process for checking the original scope, pricing ne
 
 | What you get | What it does |
 | --- | --- |
-| Agency-specific extra-work tracker | Records agreed deliverables, revision limits, new requests, proposed fees and actual decisions |
-| Branded change-request form | Summarizes what the client wants, added fee and timeline impact |
-| Five editable client messages | Helps clarify scope, quote a new request, seek approval, defer work, and confirm next steps |
-| One-page team instructions | Explains who logs a request, who approves pricing and what must happen before work starts |
+| Agency-specific Excel tracker | Configured for your working currency and up to three agreed service/package tiers. It includes scope baselines, quotes, approval and invoice reference checks, and a formula-driven dashboard. |
+| Editable Word approval form | Branded for your studio, capturing scope, added fee, timeline impact, client decision and evidence reference. |
+| Five editable Word messages | Customized for your services: clarify, quote, manage extra revisions, follow up on unsigned quotes, and hand off approved work. |
+| One-page team SOP and worked example | Assigns the project/account/billing handoffs and demonstrates one fictional request flowing through your customized process. |
 | One revision round | Adjustments to the delivered templates within seven days |
 
-The tracker can be supplied in Excel or as an offline browser-local file. There is no login or recurring subscription. It does **not** integrate with your agency systems, secure private client records on a server, send approval emails automatically, provide e-signatures, collect payments or substitute for legal review.
+**Deliverable formats: editable Excel (.xlsx) and Word (.docx).** The browser-local HTML prototype is a beta and is not included in the $99 production package until it passes separate compatibility and persistence tests. No login or recurring subscription is required. It does **not** integrate with your agency systems, secure private client records on a server, send approval emails automatically, provide e-signatures, collect payments or substitute for legal review.
 
-## See what the process looks like
+**Quality gate before delivery:** we remove demo transactions, adapt names, currency and revision rules, test the included fee/approval/invoice checks and verify each editable document. A blank off-the-shelf template is not the paid deliverable. The setup remains a manually operated workflow and does not independently validate actual customer approvals or invoices.\n\n## See what the process looks like
 
 **Fictional example:** original web-project scope: five pages and two revision rounds. New client request: one additional landing page and a custom form. Proposed extra fee: US$300. The request is **quoted, not approved**. Work starts only after the client has agreed to the new price and timeline.
 
