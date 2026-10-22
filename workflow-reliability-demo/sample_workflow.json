@@ -1,0 +1,62 @@
+{
+  "name": "DEMO ONLY - webhook lead intake with planted faults",
+  "nodes": [
+    {
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "parameters": {}
+    },
+    {
+      "name": "Lookup API",
+      "type": "n8n-nodes-base.httpRequest",
+      "parameters": {}
+    },
+    {
+      "name": "Create Row",
+      "type": "n8n-nodes-base.googleSheets",
+      "parameters": {
+        "operation": "append"
+      }
+    },
+    {
+      "name": "Orphan Formatter",
+      "type": "n8n-nodes-base.set",
+      "parameters": {}
+    },
+    {
+      "name": "Old Route",
+      "type": "n8n-nodes-base.if",
+      "disabled": true,
+      "parameters": {}
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Lookup API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lookup API": {
+      "main": [
+        [
+          {
+            "node": "Create Row",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Missing Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
