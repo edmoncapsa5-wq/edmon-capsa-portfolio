@@ -4,7 +4,7 @@
 
 ## Step 1: Send a brief fit-check email (free)
 
-[Request a sample and fit check](mailto:edmon.capsa5@gmail.com?subject=MarginLatch%20%E2%80%94%20%2499%20setup%20inquiry&body=Studio%20name%3A%20%0AWebsite%20or%20public%20package%20URL%3A%20%0AType%20of%20projects%3A%20%0AHow%20you%20currently%20track%20client%20extras%3A%20%0AWhere%20approvals%20get%20lost%20(if%20any)%3A%20%0APreferred%20file%20format%3A%20Excel%20or%20offline%20HTML%0A)
+[Request a sample and fit check](mailto:edmon.capsa5@gmail.com?subject=MarginLatch%20%E2%80%94%20%2499%20setup%20inquiry&body=Studio%20name%3A%20%0AWebsite%20or%20public%20package%20URL%3A%20%0AType%20of%20projects%3A%20%0AHow%20you%20currently%20track%20client%20extras%3A%20%0AWhere%20approvals%20get%20lost%20(if%20any)%3A%20%0AWorking%20currency%20(e.g.%20GBP)%3A%20%0A)
 
 You may also email **edmon.capsa5@gmail.com** directly. Do not send client-identifying project records, passwords, private customer data, or financial account information. Public package pages or anonymized examples are sufficient.
 
@@ -12,15 +12,15 @@ We will review whether an additional file-based workflow is genuinely useful bef
 
 ## Step 2: Confirm the fixed scope in writing
 
-**Proposed package: US$99, one-time, for one studio.**
+**Proposed package: US$99, one-time, for one studio, one operating currency, and up to three agreed service/package tiers.**
 
-- An editable **extra-work tracker**, customized to one agreed set of package tiers and service categories, with request IDs, description, classification, quoted fee, status, approval reference, and billing checkpoint.
+- An editable **Excel extra-work tracker**, customized to the agreed currency and service tiers, with unique project/request IDs, scope boundaries, hours/rates, quoted fee, approval and invoice references, control warnings and dashboard totals.
 - One **editable branded change-request/approval template** showing the added deliverable, expected fee, timeline impact, and space to record the client's actual agreement.
-- **Five client-facing email/message templates** covering (1) request clarification, (2) out-of-scope estimate, (3) explicit approval request, (4) deferring a request, and (5) approval and next-step confirmation.
-- A concise **one-page internal operating guide** showing handoff responsibilities and when work should or should not start.
+- **Five editable Word messages**, tailored to services and tone: (1) clarification, (2) extra-work quote and approval request, (3) additional revision, (4) outstanding approval follow-up, (5) verified-approval handoff.
+- A concise **one-page Word SOP** showing project/account/billing handoff responsibilities, plus one clearly fictional buyer-specific worked example.
 - **One correction/revision round** requested within seven calendar days of delivery, limited to the agreed files and scope.
 
-**Formats:** Editable Excel workbook as standard, with a browser-local HTML alternative if compatible and requested in the written order. Other formats only by separate agreement.
+**Formats:** Excel (.xlsx) for tracking, Word (.docx) for the approval form, messages and SOP. The browser-local HTML prototype is experimental and **excluded from the $99 production package**. Additional services or formats require a separate agreement.
 
 **Not included:** Subscription software, cloud-hosted dashboards, custom API integrations, audit-ready accounting records, automated emails, payment collection, verified electronic signature, legal contract review, or guaranteed recovery of money. These files are intended for one studio's internal workflow, not a licensed client-distribution platform.
 
@@ -34,7 +34,7 @@ The seller starts the production timeframe after the bank reports cleared funds 
 
 ## Step 4: Delivery and acceptance
 
-The proposed turnaround is **24–48 hours after cleared funds and complete intake**, *only when this schedule is explicitly confirmed in the order email*. The seller emails a download or file access link, a one-page use guide and a concise handoff describing how to record approvals. A stated delivery target is not a live fulfilment guarantee until accepted in writing.
+The proposed turnaround is **24–48 hours after cleared funds and complete intake**, *only when this schedule is explicitly confirmed in the order email*. The seller emails individual editable files, a quickstart guide and a fictional worked example mapped to the agreed services, after checking formulas, controls and document layout. A stated delivery target is not a live fulfilment guarantee until accepted in writing.
 
 Check the delivered file for correct package names, requested service categories, and formula/function operation. Report in-scope corrections by email within seven calendar days; one correction round is included.
 
