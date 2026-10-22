@@ -1,64 +1,67 @@
-# MarginLatch — How a $99 pilot order works
+# MarginLatch — $99 founding pilot: ordering and acceptance
 
-**Pilot offer, not a live online checkout.** For small web, branding, and video studios that want to record extras and obtain written approval before doing out-of-scope work.
+**A manually operated, customized extra-work approval-to-invoice workflow for one small agency. Not a cloud application or a live checkout.**
 
-## Step 1: Send a brief fit-check email (free)
+## 1. Free fit check and one-page proof of concept
 
-[Request a sample and fit check](mailto:edmon.capsa5@gmail.com?subject=MarginLatch%20%E2%80%94%20%2499%20setup%20inquiry&body=Studio%20name%3A%20%0AWebsite%20or%20public%20package%20URL%3A%20%0AType%20of%20projects%3A%20%0AHow%20you%20currently%20track%20client%20extras%3A%20%0AWhere%20approvals%20get%20lost%20(if%20any)%3A%20%0AWorking%20currency%20(e.g.%20GBP)%3A%20%0A)
+[See a fictional demonstration](SNAPSHOT.md), then [request a studio-specific one-page Scope Leak Snapshot](mailto:edmon.capsa5@gmail.com?subject=MarginLatch%20-%20Free%20Scope%20Leak%20Snapshot&body=Studio%20name%3A%20%0APublic%20service%20packages%20URL%3A%20%0ACommon%20extra%20request%3A%20%0A). We use public or anonymized details and label invented figures as illustrative. No calls or payment required for an initial fit check. Do not send credentials, client names, private agreements, or banking details.
 
-You may also email **edmon.capsa5@gmail.com** directly. Do not send client-identifying project records, passwords, private customer data, or financial account information. Public package pages or anonymized examples are sufficient.
+## 2. Define the complete $99 pilot before asking for payment
 
-We will review whether an additional file-based workflow is genuinely useful before proposing a paid order. **No charge for the fit check.**
+The pilot covers **one studio, up to three agreed service/package tiers and one workbook operating currency**.
 
-## Step 2: Confirm the fixed scope in writing
+- **Excel (.xlsx)**: customized tracker and dashboard with project/request IDs, fee estimates by hours or fixed fee, quote status, approval-evidence reference, invoice checkpoint and data-quality warnings.
+- **Word (.docx)**: branded approval form, **five service-specific client messages**, and one-page team SOP with the agreed role owners.
+- **One clearly fictional worked example** matched to the studio's service categories and a brief quickstart guide.
+- **First-request walkthrough by email**: one anonymized example submitted within seven calendar days of delivery; we reply with how to classify and record it.
+- **One revision round within seven calendar days** for in-scope branding, wording, or agreed package mapping.
 
-**Proposed package: US$99, one-time, for one studio, one operating currency, and up to three agreed service/package tiers.**
+No SaaS, client portal, automated payment or invoice checking, e-signatures, legal advice, ongoing management, unlimited new work, or recovery guarantees. The offline HTML prototype is not part of the production offer.
 
-- An editable **Excel extra-work tracker**, customized to the agreed currency and service tiers, with unique project/request IDs, scope boundaries, hours/rates, quoted fee, approval and invoice references, control warnings and dashboard totals.
-- One **editable branded change-request/approval template** showing the added deliverable, expected fee, timeline impact, and space to record the client's actual agreement.
-- **Five editable Word messages**, tailored to services and tone: (1) clarification, (2) extra-work quote and approval request, (3) additional revision, (4) outstanding approval follow-up, (5) verified-approval handoff.
-- A concise **one-page Word SOP** showing project/account/billing handoff responsibilities, plus one clearly fictional buyer-specific worked example.
-- **One correction/revision round** requested within seven calendar days of delivery, limited to the agreed files and scope.
+## 3. Confirm price, acceptance and payment details
 
-**Formats:** Excel (.xlsx) for tracking, Word (.docx) for the approval form, messages and SOP. The browser-local HTML prototype is experimental and **excluded from the $99 production package**. Additional services or formats require a separate agreement.
+The buyer and seller confirm by email before payment: the agency's package tiers, required currency, included files, project/account/billing roles, exact payment currency and total, FX/transfer fee handling, seller's **verified** receiving account, agreed start and delivery deadline, and remedy/cancellation/refund terms.
 
-**Not included:** Subscription software, cloud-hosted dashboards, custom API integrations, audit-ready accounting records, automated emails, payment collection, verified electronic signature, legal contract review, or guaranteed recovery of money. These files are intended for one studio's internal workflow, not a licensed client-distribution platform.
+The stated price is **US$99**, or the amount explicitly accepted in another payment currency. A buyer may use a supported bank-transfer provider, such as Wise, to send to an eligible Philippine bank account, subject to provider availability and fees. **There is no active checkout link or published bank account here. Never pay to guessed payment details.**
 
-## Step 3: Verify price and payment route — before transferring funds
+Production begins only after **independently confirmed cleared funds and complete intake**; payment screenshots or pending transactions do not suffice.
 
-The seller sends a reply confirming your selected deliverables, any approved deviations, total amount and currency, who covers conversion/transfer fees, payment channel, and expected delivery date.
+## 4. Two-business-day target and measurable acceptance checks
 
-**There is currently no self-service checkout or preconfigured online payment link.** A Philippines-based recipient may be able to receive a buyer-initiated bank transfer from the UK (for example, using Wise's send-to-PH-bank workflow), but the precise account and payment instructions will only be provided privately **after** the recipient confirms a valid receiving bank account. Do not send money to a placeholder, an unverified address or a third-party account.
+**Target delivery: within two business days after cleared payment and complete intake**, when the deadline has been confirmed in the buyer's order email.
 
-The seller starts the production timeframe after the bank reports cleared funds **and** the agreed intake is complete. A screenshot or payment-pending notice alone is not confirmation of receipt.
+The seller checks, for the **agreed Excel/Word formats**:
 
-## Step 4: Delivery and acceptance
+1. The workbook opens without repair prompts and starts without fictional client transactions.
+2. The agreed service tiers, scope limits, working currency and handoff roles are configured.
+3. A quoted change request is **not counted as approved** without an approval-evidence reference.
+4. An approved change request is **not counted as invoiced** without an invoice reference.
+5. The Word approval form, five client scripts, one-page SOP and worked example are present, editable and visually readable.
 
-The proposed turnaround is **24–48 hours after cleared funds and complete intake**, *only when this schedule is explicitly confirmed in the order email*. The seller emails individual editable files, a quickstart guide and a fictional worked example mapped to the agreed services, after checking formulas, controls and document layout. A stated delivery target is not a live fulfilment guarantee until accepted in writing.
+The seller's checks are functional file checks, not independent validation of real client approval evidence, actual invoices, third-party systems or payments.
 
-Check the delivered file for correct package names, requested service categories, and formula/function operation. Report in-scope corrections by email within seven calendar days; one correction round is included.
+### Working-files promise and correction window
 
-If the seller cannot fulfil the mutually agreed scope, refund/cancellation treatment must be confirmed explicitly **before payment**. Any dispute is to be raised by replying to the order thread; this page is not a substitute for an enforceable service agreement or applicable consumer law.
+If we cannot deliver the mutually agreed package, the setup fee is refunded. If the buyer reports, **within seven calendar days of delivery**, a material failure against the written acceptance checklist, the seller will fix that in-scope defect at no additional charge **within three business days after receiving enough detail to reproduce it**. If the seller cannot remedy it, the setup fee is refunded.
 
-## Sample purchase-confirmation email
+The separate one-round revision is for reasonable in-scope wording, branding or package mapping within the same seven-day window. The individual order must disclose the refund method and handling of transfer fees **before payment**. This promise does not limit applicable legal rights. It does not guarantee revenue recovery, customer satisfaction with unrelated software or performance outside the agreed scope.
 
-**Subject:** MarginLatch — $99 customized scope-control pilot — proposed order
+## 5. Suggested written purchase confirmation
 
-> Studio / legal buyer name: [confirm]  
-> Public service/package URL: [confirm]  
-> Preferred editable format: [Excel or offline HTML]  
-> Agreed package tiers and change categories: [short description]  
-> Included deliverables: [tracker, approval template, five scripts, one-page guide, one revision]  
-> Fixed setup price and payment currency: [confirm]  
-> Transfer/FX fees: [confirm responsibility]  
-> Seller's verified bank payment instructions: [supplied privately after verification]  
-> Delivery deadline: [confirmed date/time after payment + full intake]  
-> Correction window: [one in-scope round within seven calendar days]  
-> Cancellation/refund terms: [mutually agreed details before payment]  
-> Approval to proceed: [buyer to confirm in reply]
+| Confirm before buyer sends money | Entry |
+| --- | --- |
+| Agency/studio and authorized contact | [Buyer confirms] |
+| Public services page and up to three service tiers | [Link and names] |
+| Workbook currency | [GBP, USD, etc.] |
+| Internal project/account and billing owners | [Roles only] |
+| Included deliverables | Excel, Word form, five scripts, one-page SOP, fictional example, first-request walkthrough, one revision |
+| Fixed fee and destination currency | [US$99 or written FX equivalent] |
+| Verified payment route and transfer fees | [Agreed privately] |
+| Start condition | Cleared funds plus complete non-sensitive intake |
+| Agreed delivery deadline and timezone | [Exact date and timezone] |
+| Remedy, refund and revision terms | [As above or mutually agreed in writing] |
+| Approval to proceed | [Buyer's affirmative email reply] |
 
-**A draft order is not an invoice, and a buyer expressing interest is not a paid sale.**
+**An inquiry or preview request is not an order. A payment screenshot does not establish receipt.** The buyer's own signed project contracts determine which client extras are genuinely chargeable.
 
----
-
-**Working name:** MarginLatch, an experimental pilot by Edmon Capsa / CAPSAWISE SOFTWARE DEVELOPMENT SERVICES. The published worked examples are fictional. Trademark status has not been established. This information is preliminary and may be superseded by the terms of a specific written order.
+*MarginLatch is an experimental pilot working name by Edmon Capsa / CAPSAWISE SOFTWARE DEVELOPMENT SERVICES. There is no claimed customer case study, recovered-revenue result, or live checkout.*
