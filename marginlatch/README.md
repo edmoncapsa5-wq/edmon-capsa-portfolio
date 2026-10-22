@@ -1,54 +1,62 @@
-# MarginLatch — stop the “one more thing” work from slipping through unpaid
+# MarginLatch — client extras, from request to billing handoff
 
-**Your studio handles the creative work. We set up the handoff between extra client requests, written approval and invoicing — for US$99, once.**
+**A client asks for one more page, revision round or video cutdown. Who checks the original scope, obtains written approval for the extra fee, and confirms billing knows about it?**
 
-When a client asks for an extra page, revision round or video cutdown, who checks whether it was included? Who approves the price and timeline? And who makes sure the billing owner receives that decision?
+**We set up that exact handoff for your studio — using files you own and the software you already use.**
 
-**MarginLatch is a done-for-you workflow setup, not another SaaS subscription.** We adapt a tested Excel tracker and editable Word documents to how your studio already sells and delivers projects. You keep your current email, project board and invoicing software.
+### A working process, not just a template pack
 
-> **Founding pilot: US$99 one time.** One studio, up to three service/package tiers, one working currency. **Target handoff within two business days after cleared payment and complete intake**, when we confirm the schedule in writing. No monthly fee.
+**Founding pilot: US$99 once.** One small agency, one working currency, and up to three agreed service/package tiers. No subscription, new login, migration or automated integration.
 
-## See one request from your own service packages — free, before payment
+By the agreed handoff, you'll have a customized, tested way to:
 
-**Request a free, one-page Scope Leak Snapshot.** Email your publicly listed service/package page and one common extra request. If the fit is promising, we'll use public or anonymized information to show:
+1. **Classify a request.** Compare an added deliverable or revision with the scope actually agreed with your client.
+2. **Record a decision.** Quote any extra fee and timing impact, then record the client's **actual written approval** before scheduling additional work.
+3. **Close the loop.** Give the billing owner the approved change and record the invoice reference after the invoice is issued.
 
-1. Where an extra request differs from an agreed scope or revision allowance.
-2. What fee, timeline and approval details need confirming before the work begins.
-3. A friendly draft response and the approval-to-invoice handoff.
+**The workbook highlights missing IDs, incomplete requests and missing approval or invoice references. It does not authenticate approvals, send invoices or collect fees automatically.** Your team retains every commercial decision.
 
-If your agency already has an effective process, we'll tell you; another tracker could add friction. The preview is illustrative, not a full unpaid system, and we won't claim your studio has a problem without evidence.
+## See one example tailored to your studio — free
 
-**[See the fictional one-page example](SNAPSHOT.md)** or **[ask for your own free Snapshot by email](mailto:edmon.capsa5@gmail.com?subject=MarginLatch%20-%20Free%20Scope%20Leak%20Snapshot&body=Studio%20name%3A%20%0APublic%20service%20packages%20URL%3A%20%0ACommon%20extra%20request%3A%20%0AHow%20your%20team%20handles%20approvals%3A%20)**. No call, new account or client-sensitive records required.
+Send a link to your **public service/package page** and tell us one common extra request. We'll prepare a **one-page, clearly illustrative Scope Leak Snapshot** showing how that particular request could move through the workflow. We won't invent your rates or claim your agency has lost revenue.
 
-## What we build for your studio for $99
+**[Request your free, no-call Scope Leak Snapshot](mailto:edmon.capsa5@gmail.com?subject=MarginLatch%20-%20Free%20Scope%20Leak%20Snapshot&body=Studio%20name%3A%20%0APublic%20services%20page%3A%20%0AA%20common%20extra%20request%3A%20%0A)** · [See a fictional example first](SNAPSHOT.md)
 
-| Included | What it helps you do |
+No client data, credentials or payment details needed for the preview. If your current tools already solve the handoff reliably, we'll say the setup isn't necessary.
+
+## Exactly what the $99 buys
+
+| We configure and provide | How it helps |
 | --- | --- |
-| **Configured Excel request tracker and dashboard** | Your packages and revision allowances; hourly **or fixed-fee** estimates; clear quote, approval-evidence and invoice-reference checkpoints; warnings for incomplete/invalid records. |
-| **Editable, branded Word change-approval form** | Record what changed, the fee, timing impact and the client's actual decision. |
-| **Five Word client replies, written for your services** | Clarify a request, quote an addition, handle extra revisions, follow up on pending approval and hand off verified approvals. |
-| **One-page team SOP** | Set who receives requests, who may quote, when work may start and who checks billing. |
-| **One clearly fictional example mapped to your services** | Show the whole process before your team uses real records. |
-| **A personal first-request email walkthrough** | Within seven calendar days of delivery, send one anonymized example and we'll show you how to record it using the customized files. |
-| **One in-scope revision round** | Request branding, wording or agreed package-mapping corrections within seven calendar days. |
+| **Excel change tracker and dashboard** | Mapped to your agreed services, revision allowances and currency; hourly or fixed-fee quote; evidence and invoice checkpoints with validation warnings |
+| **Editable branded Word approval form** | Records what's changed, the proposed fee, timeline, response and reference to genuine client approval |
+| **Five tailored client email drafts** | Calmly clarify extras, quote changes, discuss additional revisions, follow up on pending approval and hand off approved work |
+| **One-page team SOP** | Who can classify, quote, approve internally and confirm billing, using existing tools |
+| **A worked request in your own service categories** | A fictional, clearly labeled end-to-end example so the process is visible before live use |
+| **Your first-request activation assist** | Within seven days after delivery, send **one anonymized request** and we will reply with a step-by-step completed example and tailored draft client response, showing how to use the delivered workflow. No contacting your client |
+| **One in-scope revision round** | Branding, wording or agreed tier mapping changes requested within seven days |
 
-**We do the configuration and checks; you get clean editable files, not a generic template library.** Before handoff we test the quote, approved-value and invoiced-value controls and visually check the Word files. Your staff must still verify real client approvals and invoicing.
+**Our commitment:** Configure, check and explain the files. We do not just sell an empty template library. Your staff still records real approvals, billing decisions and invoice numbers manually. No CRM integration, e-signature, legal contract drafting or revenue-recovery guarantee.
 
-## Why pay when there are cheap or free tools?
+### How buying works
 
-The value isn't an empty change-request form; it's **not having to design and test the process yourself**. We map it to your services and handoffs and explain the first real use. No migration or recurring subscription.
+**Step 1:** Ask for the free one-page Snapshot by email.  
+**Step 2:** If there's a fit, we confirm the exact service tiers, deliverables, fees, five acceptance checks, delivery date and remedy terms in writing.  
+**Step 3:** Only after payment method and refund route are privately verified do we supply payment instructions and accept the order.  
+**Step 4:** We deliver the configured Excel and Word files, walkthrough and quickstart. Target is **two business days after cleared funds and complete intake**, once a deadline is agreed in writing.
 
-**Example only — not a revenue claim:** an extra production cutdown is quoted for £375. The system helps show whether that request was approved and passed to invoicing, but does **not** promise £375 collected, recovered or saved. The buyer's own contracts and judgments control what is legitimately chargeable.
+### A clear working-files promise
 
-## Low-risk, straightforward terms
+If we cannot deliver the agreed package, we refund the setup fee. If an agreed file materially fails the **written five-point acceptance checklist**, tell us within seven calendar days; we'll correct the in-scope defect within three business days after receiving sufficient details. If we cannot correct it, we'll refund the setup fee. Refund method and any bank/FX fees are confirmed before payment. Applicable legal rights remain unaffected.
 
-- **Preview before purchase:** one free personalized one-page illustration for qualified enquiries, based on public/anonymized information.
-- **Fixed-price setup:** $99 for the agreed pilot scope; further integrations or expanded service tiers are outside it unless quoted and accepted separately.
-- **Working-files promise:** if we fail to deliver the agreed files, we refund the setup fee. If any deliverable materially fails an agreed acceptance check and you report it within seven calendar days, we correct that in-scope defect within three business days of receiving enough detail to reproduce it; if we cannot correct it, we refund the setup fee. Payment/refund channel and any transfer fees are confirmed **before payment**; this does not limit applicable rights.
-- **No platform lock-in:** all production files are editable Excel/Word. The experimental local HTML prototype is **not included**. No e-signatures, automatic emails, integration, payment collection, or guaranteed recovered fees.
+[Full ordering, acceptance and refund terms](ORDER.md)
 
-**A good fit:** small web, brand or video agencies selling fixed-scope packages with occasional change requests. **Not a good fit:** teams already handling approval and billing seamlessly; agencies needing a client portal, automatic approval tracking, integrations, or legal contract drafting.
+### Would you be better off doing it yourself?
 
-**[Read the exact order, checklist and payment terms](ORDER.md)** or **[request your one-page preview](mailto:edmon.capsa5@gmail.com?subject=MarginLatch%20-%20Free%20Scope%20Leak%20Snapshot)**.
+- **Free templates:** Good if your team has time to customize, test and maintain them. We don't claim that the blank forms are unique.
+- **Your current project software:** Better if it already links change approval and billing reliably. Keep it.
+- **MarginLatch at $99:** Appropriate only if your team needs someone to **map, configure, test and demonstrate** a simple missing handoff, without introducing another app.
 
-*Pilot name: MarginLatch. Prepared by Edmon Capsa / CAPSAWISE SOFTWARE DEVELOPMENT SERVICES. No current customer results, endorsements or recovered-revenue guarantees are claimed. No online checkout or preverified receiving bank account is active here.*
+**[See your own example before deciding](mailto:edmon.capsa5@gmail.com?subject=MarginLatch%20-%20Free%20Scope%20Leak%20Snapshot)**
+
+*MarginLatch is a new pilot offered by Edmon Capsa / CAPSAWISE SOFTWARE DEVELOPMENT SERVICES. The public examples are fictional; we make no customer testimonial, recovered-revenue, time-saved or guaranteed conversion claims. No automatic checkout or verified receiving bank account is published here. The experimental offline HTML prototype is not included.*
