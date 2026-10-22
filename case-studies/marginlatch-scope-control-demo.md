@@ -26,6 +26,25 @@ MarginLatch helps the studio document a **request → estimate → client decisi
 
 This example does not grant permission to invoice or start work without genuine approval. Client contracts control the actual process.
 
+## Fictional video-production change request
+
+A production studio agrees to deliver one 60-second campaign film with two consolidated revision rounds. Following the second round, the client requests two additional 15-second cutdowns with separate social-media framing.
+
+| Decision field | Example |
+|---|---|
+| Original scope | One 60-second master; two revision rounds |
+| Client request | Two new 15-second versions, each reformatted for social |
+| Type | Added deliverables, not an ordinary correction |
+| Extra editing / QA effort | 3.5 hours, illustrative |
+| Proposed rate | $85/hour, illustrative |
+| Quote | **$297.50** |
+| Client approval status | **Pending — do not start** |
+| Recorded impact | One additional business day after approval, illustrative |
+
+**Example approval email:** “Happy to provide two 15-second cutdowns. These are new outputs beyond the agreed 60-second master, so the additional estimate is $297.50 and one business day after approval. Please reply with approval of the added fee and delivery date before we schedule the work.”
+
+**Boundary:** A timestamped-feedback platform (such as Frame.io) is useful for editorial notes. MarginLatch does not connect to it or provide integrated billing or legally verified e-signatures. It records the separate internal quote/decision trail using editable files.
+
 ## $99 founding offer: customized scope-control setup
 
 - A tracker configured around the studio’s actual package tiers, revision allowances, and added-work categories.
