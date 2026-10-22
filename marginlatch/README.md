@@ -38,6 +38,8 @@ No client data, credentials or payment details needed for the preview. If your c
 
 **Our commitment:** Configure, check and explain the files. We do not just sell an empty template library. Your staff still records real approvals, billing decisions and invoice numbers manually. No CRM integration, e-signature, legal contract drafting or revenue-recovery guarantee.
 
+**Verification, not invented testimonials:** The current workbook master was checked against 14 fictional-data scenarios and the Word documents were visually reviewed. [Read the exact testing scope, acceptance checklist and known limitations](QUALITY.md). The final studio-specific copy is rechecked at delivery.
+
 ### How buying works
 
 **Step 1:** Ask for the free one-page Snapshot by email.  
