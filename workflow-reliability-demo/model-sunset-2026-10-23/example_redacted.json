@@ -1,0 +1,27 @@
+{
+  "name": "SYNTHETIC DEMO - retired model references",
+  "nodes": [
+    {
+      "name": "Summarizer",
+      "type": "n8n-nodes-base.openAi",
+      "parameters": {
+        "modelId": "gpt-4o-2024-05-13"
+      }
+    },
+    {
+      "name": "Other model",
+      "type": "n8n-nodes-base.openAi",
+      "parameters": {
+        "modelId": "gpt-6-luna"
+      }
+    },
+    {
+      "name": "Document Processor",
+      "type": "n8n-nodes-base.httpRequest",
+      "parameters": {
+        "jsonBody": "{\"model\":\"gpt-3.5-turbo-0125\"}"
+      }
+    }
+  ],
+  "connections": {}
+}
