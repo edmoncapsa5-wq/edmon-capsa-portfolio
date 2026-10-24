@@ -2,7 +2,7 @@
 
 **Independent AI-assisted demonstration, not a production validation or a client case study.**
 
-OpenAI's [official deprecations](https://developers.openai.com/api/docs/deprecations) identify several API model shutdowns on October 23, 2026. This standard-library Python tool scans a **sanitized n8n JSON export** for textual references to exact model IDs. A match is **not proof of an active model invocation**: the reference could be in comments, disabled nodes, expressions or documentation. It does not evaluate n8n expressions or test live API calls.
+OpenAI's [official deprecations](https://developers.openai.com/api/docs/deprecations) identify several API model shutdowns on October 23, 2026. This standard-library Python tool scans a **sanitized n8n JSON export** for textual references to exact model IDs. This version covers all exact model IDs and aliases listed in the October 23, 2026 official model shutdown table, including gpt-4-turbo-2024-04-09, which the original version wrongly excluded. A match is **not proof of an active model invocation**: the reference could be in comments, disabled nodes, expressions or documentation. It does not evaluate n8n expressions or test live API calls.
 
 ## Run
 
@@ -11,7 +11,7 @@ python -m unittest -v test_model_sunsets.py
 python check_model_sunsets.py example_redacted.json
 ```
 
-Expected: six passing tests, two synthetic model references. Exit code 1 means references found, 0 means none found, 2 means input error.
+Expected: eight passing tests, two synthetic model references. Exit code 1 means references found, 0 means none found, 2 means input error.
 
 ## Review a match
 
