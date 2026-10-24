@@ -1,5 +1,5 @@
 import unittest
-from check_model_sunsets import scan
+from check_model_sunsets import RETIRED_MODELS, scan
 
 class ModelSunsetTests(unittest.TestCase):
     def test_exact_retired_snapshot(self):
@@ -7,8 +7,8 @@ class ModelSunsetTests(unittest.TestCase):
         self.assertEqual(scan(doc)[0]["node"], "LLM")
         self.assertEqual(scan(doc)[0]["model"], "gpt-4o-2024-05-13")
 
-    def test_nonretired_longer_snapshot_is_not_flagged(self):
-        self.assertEqual([], scan({"model":"gpt-4-turbo-2024-04-09"}))
+    def test_retired_longer_snapshot_now_flagged(self):
+        self.assertEqual(scan({"model":"gpt-4-turbo-2024-04-09"})[0]["model"], "gpt-4-turbo-2024-04-09")
 
     def test_expression_reference(self):
         doc = {"nodes":[{"name":"Dynamic","parameters":{"model":"={{ $json.old || 'o4-mini-2025-04-16' }}"}}]}
@@ -23,6 +23,16 @@ class ModelSunsetTests(unittest.TestCase):
 
     def test_retired_fine_tune(self):
         self.assertEqual(scan({"params":{"model":"ft-o4-mini-2025-04-16"}})[0]["model"], "ft-o4-mini-2025-04-16")
+
+    def test_all_documented_model_names_match(self):
+        for model in RETIRED_MODELS:
+            with self.subTest(model=model):
+                self.assertEqual([x["model"] for x in scan({"model":model})], [model])
+
+    def test_similarly_named_unlisted_model_not_flagged(self):
+        self.assertEqual(scan({"model":"gpt-4.1-mini"}), [])
+        self.assertEqual(scan({"model":"o4-mini-unknown-version"}), [])
+        self.assertEqual(scan({"model":"my-gpt-4"}), [])
 
 if __name__ == "__main__":
     unittest.main()
