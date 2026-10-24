@@ -27,9 +27,9 @@ RETIRED_MODELS = frozenset({
 })
 # Match whole model IDs, not prefixes embedded in unrelated longer versions.
 MODEL_PATTERN = re.compile(
-    r"(?<![A-Za-z0-9_-])(?:" +
+    r"(?<![A-Za-z0-9_.-])(?:" +
     "|".join(re.escape(v) for v in sorted(RETIRED_MODELS, key=len, reverse=True)) +
-    r")(?![A-Za-z0-9_-])"
+    r")(?![A-Za-z0-9_.-])"
 )
 
 def scan(workflow):
