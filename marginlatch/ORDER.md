@@ -9,7 +9,7 @@
 ## Paid scope: US$99, one-time
 
 **Delivery files**
-1. Customized **.xlsx** tracker/dashboard with package/revision boundaries, project and request IDs, fee estimates (hours/rate or fixed override), actual quote status, approval-evidence reference, invoice-reference checkpoint and control warnings.
+1. Customized **.xlsx** tracker/dashboard with package/revision boundaries, project and request IDs, fee estimates (hours/rate or fixed override), actual quote status, client-approval and internal no-charge waiver references, a separate estimated goodwill-value metric, invoice-reference checkpoint and control warnings.
 2. Customized **.docx** client change-approval form with branding, added work, proposed fee, schedule impact and approval evidence field.
 3. **Five** service-specific **.docx** client messages: clarify, quote/approval, added revision, awaiting approval, verified-approval handoff.
 4. **One-page .docx** team SOP listing intake, estimating, authority for decisions and invoicing handoff.
@@ -33,8 +33,8 @@ The seller proposes handoff within **two business days** of cleared payment and 
 
 1. The configured Excel file opens without a repair prompt and has **no fictional transactions mixed into live totals**.
 2. The agreed service tiers, currency, revision limits and role handoffs are correctly reflected.
-3. An extra request **is not included as approved** in the tracker/dashboard without a recorded written-approval reference.
-4. An extra request **is not included as invoiced** without a valid recorded approval reference **and** invoice reference.
+3. An extra request **is not included as approved** in the tracker/dashboard without a recorded written client-approval reference. A deliberate **Waived** decision must instead cite an internal owner decision and appears only as estimated goodwill value.
+4. An extra request **is not included as invoiced** without a valid recorded client approval reference **and** invoice reference; complimentary/waived work is not booked as invoiced.
 5. The branded editable approval form, **five** messages, **one-page SOP**, worked demonstration and quickstart are included and readable.
 
 The buyer's team must check the **authenticity** of the underlying client agreement, approval and invoice. File checks cannot do that.
