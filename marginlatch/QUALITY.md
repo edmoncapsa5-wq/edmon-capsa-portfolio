@@ -1,8 +1,8 @@
 # MarginLatch — What's tested and what isn't
 
-**Public product-readiness note | Pilot master as of October 22, 2026**
+**Public product-readiness note | Revised GBP workbook master: October 27, 2026**
 
-MarginLatch is a **manual, file-based workflow tailored to a studio after the order**, not a SaaS platform. We use editable Excel (.xlsx) and Word (.docx). The current uncustomized UK workbook was tested using **14 functional scenarios with fictitious records**. Those checks are not client testimonials, a certification, a comprehensive security audit or evidence that any agency recovered additional revenue.
+MarginLatch is a **manual, file-based workflow tailored to a studio after the order**, not a SaaS platform. We use editable Excel (.xlsx) and Word (.docx). The current uncustomized UK workbook was tested using **14 functional scenarios with fictitious records**. A subsequent October 27 focused test also checked an internally evidenced `Waived` decision, exclusion from approved/invoiced totals, an hourly £170 valuation, a £250 fixed-fee valuation, missing internal waiver evidence and a missing estimate. This is a limited supplemental test, **not** another independent set of 14 scenarios. Those checks are not client testimonials, a certification, a comprehensive security audit or evidence that any agency recovered additional revenue.
 
 ## What the working master was checked for
 
@@ -21,7 +21,7 @@ MarginLatch is a **manual, file-based workflow tailored to a studio after the or
 | Duplicate request ID | Flagged and omitted from valid financial totals |
 | Incomplete request | Missing required IDs, description, classification or status triggers review warnings |
 | Quote-to-approval transition | Financial summary changes only when required input is present |
-| Review dashboard | Invalid or incomplete records remain visible for human attention |
+| Review dashboard | Invalid or incomplete records remain visible for human attention |\n| Complimentary goodwill decision (supplemental test, Oct 27) | Waived extras with dated internal evidence show estimated value separately, never as approved, invoiced or paid |
 
 **Scope of this testing:** spreadsheet formula/control behavior on the master, plus visual checks for a one-page editable approval form, a two-page document of five client messages, and a one-page team SOP. The seller rechecks the final *buyer-specific* files before handoff.
 
@@ -30,7 +30,7 @@ MarginLatch is a **manual, file-based workflow tailored to a studio after the or
 - That a client actually authorized a charge or signed anything. The studio must review authentic approval messages and its contract.
 - That an invoice was genuinely issued or settled. Staff enter and verify invoice references; there is **no finance integration**.
 - That work qualifies as out of scope legally or commercially. The existing agreement governs.
-- That the studio will earn or recover a particular amount. Example values, including £375, are fictional.
+- That a goodwill/waived figure is real lost revenue, or that it was ever contractually collectible. It is a manually estimated standard value of work the agency chose to provide without charging.\n- That the studio will earn or recover a particular amount. Example values, including £375, are fictional.
 - That files synchronize across computers. Excel/Word are maintained by the agency. Do not use the untested local HTML prototype as if it were a shared or secure platform.
 - That the customized version will automatically pass all checks without further QA. The delivery acceptance checklist is part of each paid order.
 
