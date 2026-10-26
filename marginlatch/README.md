@@ -20,7 +20,7 @@ By the agreed handoff, you'll have a customized, tested way to:
 
 Send a link to your **public service/package page** and tell us one common extra request. We'll prepare a **one-page, clearly illustrative Scope Leak Snapshot** showing how that particular request could move through the workflow. We won't invent your rates or claim your agency has lost revenue.
 
-**[Request your free, no-call Scope Leak Snapshot](mailto:edmon.capsa5@gmail.com?subject=MarginLatch%20-%20Free%20Scope%20Leak%20Snapshot&body=Studio%20name%3A%20%0APublic%20services%20page%3A%20%0AA%20common%20extra%20request%3A%20%0A)** · [See a fictional example first](SNAPSHOT.md)
+**[Request your free, no-call Scope Leak Snapshot](mailto:edmon.capsa5@gmail.com?subject=MarginLatch%20-%20Free%20Scope%20Leak%20Snapshot&body=Studio%20name%3A%20%0APublic%20services%20page%3A%20%0AA%20common%20extra%20request%3A%20%0A)** · [See a fictional example first](SNAPSHOT.md) · [See the creative-studio Trello-style handoff](samples/trello-request-to-approval-handoff.md)
 
 No client data, credentials or payment details needed for the preview. If your current tools already solve the handoff reliably, we'll say the setup isn't necessary.
 
