@@ -11,8 +11,8 @@
 By the agreed handoff, you'll have a customized, tested way to:
 
 1. **Classify a request.** Compare an added deliverable or revision with the scope actually agreed with your client.
-2. **Record a decision.** Quote any extra fee and timing impact, then record the client's **actual written approval** before scheduling additional work.
-3. **Close the loop.** Give the billing owner the approved change and record the invoice reference after the invoice is issued.
+2. **Record a decision.** Price and seek client approval for chargeable extras, or deliberately **waive** an extra for goodwill with a documented internal decision. Confirm schedule changes with the client before performing affected work.
+3. **Close the loop.** Give the billing owner approved chargeable changes, separately record goodwill decisions, and enter invoice references after invoices are issued.
 
 **The workbook highlights missing IDs, incomplete requests and missing approval or invoice references. It does not authenticate approvals, send invoices or collect fees automatically.** Your team retains every commercial decision.
 
@@ -28,7 +28,7 @@ No client data, credentials or payment details needed for the preview. If your c
 
 | We configure and provide | How it helps |
 | --- | --- |
-| **Excel change tracker and dashboard** | Mapped to your agreed services, revision allowances and currency; hourly or fixed-fee quote; evidence and invoice checkpoints with validation warnings |
+| **Excel change tracker and dashboard** | Mapped to your services, revision allowances and currency; hourly or fixed-fee quotes; **waived goodwill decisions tracked separately from billing**, evidence and invoice checkpoints with validation warnings |
 | **Editable branded Word approval form** | Records what's changed, the proposed fee, timeline, response and reference to genuine client approval |
 | **Five tailored client email drafts** | Calmly clarify extras, quote changes, discuss additional revisions, follow up on pending approval and hand off approved work |
 | **One-page team SOP** | Who can classify, quote, approve internally and confirm billing, using existing tools |
@@ -38,7 +38,7 @@ No client data, credentials or payment details needed for the preview. If your c
 
 **Our commitment:** Configure, check and explain the files. We do not just sell an empty template library. Your staff still records real approvals, billing decisions and invoice numbers manually. No CRM integration, e-signature, legal contract drafting or revenue-recovery guarantee.
 
-**Verification, not invented testimonials:** The current workbook master was checked against 14 fictional-data scenarios and the Word documents were visually reviewed. [Read the exact testing scope, acceptance checklist and known limitations](QUALITY.md). The final studio-specific copy is rechecked at delivery.
+**Verification, not invented testimonials:** The earlier workbook master was checked against 14 fictional-data scenarios; the updated GBP master additionally passed focused waiver-status and no-charge controls and the Word documents were visually reviewed. [Read the exact testing scope, acceptance checklist and known limitations](QUALITY.md). The final studio-specific copy is rechecked at delivery.
 
 ### How buying works
 
